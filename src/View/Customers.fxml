@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="902.0" style="-fx-background-color: aliceblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.CustomersController">
+   <children>
+      <TableView fx:id="CustomersTable" layoutX="13.0" layoutY="59.0" prefHeight="262.0" prefWidth="874.0">
+        <columns>
+          <TableColumn fx:id="CustomerIDColumn" prefWidth="48.0" text="ID" />
+          <TableColumn fx:id="NameColumn" prefWidth="130.79999542236328" text="Name" />
+            <TableColumn fx:id="AddressColumn" prefWidth="182.0" text="Address" />
+            <TableColumn fx:id="PostalCodeColumn" prefWidth="107.20001220703125" text="Postal Code" />
+            <TableColumn fx:id="PhoneColumn" prefWidth="135.99996948242188" text="Phone" />
+            <TableColumn fx:id="CountryColumn" prefWidth="106.4000244140625" text="Country" />
+            <TableColumn fx:id="DivisionColumn" prefWidth="167.199951171875" text="Division" />
+        </columns>
+      </TableView>
+      <Button fx:id="CreateCustomerButton" layoutX="14.0" layoutY="333.0" mnemonicParsing="false" onAction="#CreateCustomer" text="Add New Customer" />
+      <Button fx:id="UpdateCustomerButton" layoutX="175.0" layoutY="333.0" mnemonicParsing="false" onAction="#ModifyCustomer" text="Modify Customer" />
+      <Button fx:id="DeleteCustomerButton" layoutX="340.0" layoutY="333.0" mnemonicParsing="false" onAction="#DeleteCustomer" text="Delete Customer" />
+      <Label fx:id="Header" layoutX="385.0" layoutY="14.0" text="Customers" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="backButton" layoutX="780.0" layoutY="332.0" mnemonicParsing="false" onAction="#backButtonPressed" prefHeight="26.0" prefWidth="66.0" text="Back" />
+   </children>
+</AnchorPane>

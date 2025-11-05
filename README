@@ -1,0 +1,25 @@
+
+❌TITLE: C195 Scheduler
+
+❌PURPOSE: To keep track of all users appointments in database.
+             User able to create / modify appointments and customers in said appointments
+               User is also able to generate reports for all appointments by Customer Name, Contact Name, or Type
+
+❌ DYLAN MCCUMSEY | DMCCUM2@WGU.EDU | VERSION: 213.92.3 | DATE: 05/09/2023
+
+❌ INTELLIj COMMUNITY 2022.2.3 | JAVA SE 19.0.1 | JavaFX-SDK-19.0.1
+
+❌ To run this program the user will have to open the project folder in IntelliJ.
+❌ Find "Project Structure" under the IntelliJ file tab, and add your 'mysql-connector' and JavaFX lib folder to the libraries.
+❌ Next find "edit configurations" under the Intellij Run tab. Then select "Modify options" and toggle "Add VM options"
+❌ Enter '--module-path ${PATH_TO_FX} --add-modules=javafx.controls,javafx.fxml,javafx.graphics' into VM options field.
+❌ Also Enter 'Main.Main' into the Main Path field.
+
+❌ The C195 Scheduler is now ready to rock...
+
+❌ Active the green play button ( ▶ ) at the upper right corner of your screen ↗
+
+
+❌ Additional report for 3f includes the ability to generate report by appointments with each customer
+
+❌ mysql-connector-java-8.0.28

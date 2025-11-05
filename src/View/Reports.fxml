@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="Records2Label" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="570.0" prefWidth="1050.0" style="-fx-background-color: aliceblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReportsController">
+   <children>
+      <Pane layoutX="797.0" layoutY="309.0" prefHeight="144.0" prefWidth="216.0" style="-fx-background-color: white;">
+         <children>
+            <Label layoutX="15.0" layoutY="8.0" prefHeight="27.0" prefWidth="196.0" text="Total Appt by Contact Name" />
+            <ComboBox fx:id="ContactCombo" layoutX="33.0" layoutY="47.0" prefWidth="150.0" />
+            <ToggleButton fx:id="contactNameToggle" layoutX="27.0" layoutY="82.0" mnemonicParsing="false" onAction="#onToggleFilterByContactName" prefHeight="25.0" prefWidth="162.0" text="Contact Schedule" />
+         </children>
+      </Pane>
+      <Pane layoutX="797.0" layoutY="141.0" prefHeight="144.0" prefWidth="216.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="CustomerLabel" layoutX="6.0" layoutY="7.0" prefHeight="27.0" prefWidth="224.0" text="Total Appt by Customer Name" />
+            <ComboBox fx:id="CustomerCombo" layoutX="33.0" layoutY="42.0" prefWidth="150.0" />
+            <ToggleButton fx:id="customerApptToggle" layoutX="27.0" layoutY="87.0" mnemonicParsing="false" onAction="#onToggleFilterByCustomerName" text="Appointments by Customer" />
+         </children>
+      </Pane>
+      <Label fx:id="Header" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="32.0" prefWidth="294.0" text="Appointments Report" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="HomeButton" layoutX="-133.0" layoutY="72.0" mnemonicParsing="false" onAction="#Main" prefHeight="18.0" prefWidth="32.0" style="-fx-background-color: #ccc6ee;">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="backButton" layoutX="885.0" layoutY="518.0" mnemonicParsing="false" onAction="#Main" text="Back" />
+      <TextArea fx:id="reportTextArea" layoutX="23.0" layoutY="76.0" prefHeight="466.0" prefWidth="766.0" />
+      <ToggleButton fx:id="typeMonthToggle" layoutX="824.0" layoutY="84.0" mnemonicParsing="false" onAction="#onToggleFilterByMonthType" prefHeight="26.0" prefWidth="162.0" text="Total Appt Type per Month" />
+   </children>
+</AnchorPane>

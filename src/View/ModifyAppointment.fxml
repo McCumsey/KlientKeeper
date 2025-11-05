@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: aliceblue;" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifyAppointmentController">
+   <children>
+      <Label fx:id="Header" alignment="CENTER" layoutX="153.0" layoutY="15.0" prefHeight="32.0" prefWidth="294.0" text="Modify Appointment" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="ContactLabel" layoutX="15.0" layoutY="80.0" text="Contact">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="TitleLabel" layoutX="12.0" layoutY="132.0" text="Title">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="DescriptionLabel" layoutX="14.0" layoutY="206.0" text="Description">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="LocationLabel" layoutX="13.0" layoutY="275.0" text="Location">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label fx:id="TypeLabel" layoutX="14.0" layoutY="329.0" text="Type">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <TextField fx:id="TitleTextField" layoutX="109.0" layoutY="122.0" prefHeight="39.0" prefWidth="170.0" />
+      <TextField fx:id="DescriptionTextField" layoutX="109.0" layoutY="176.0" prefHeight="81.0" prefWidth="170.0" />
+      <TextField fx:id="LocationTextField" layoutX="109.0" layoutY="266.0" prefHeight="39.0" prefWidth="170.0" />
+      <Button fx:id="SaveButton" layoutX="227.0" layoutY="439.0" mnemonicParsing="false" onAction="#Save" text="Save" />
+      <Button fx:id="CancelButton" layoutX="305.0" layoutY="439.0" mnemonicParsing="false" onAction="#Cancel" text="Cancel" />
+      <Label fx:id="AppointmentIDLabel" layoutX="294.0" layoutY="80.0" text="Appointment ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="StartDateLabel" layoutX="293.0" layoutY="130.0" text="Start Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="StartTimeLabel" layoutX="294.0" layoutY="187.0" text="Start Time">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="EndDateLabel" layoutX="295.0" layoutY="240.0" text="End Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="EndTimeLabel" layoutX="293.0" layoutY="296.0" text="End Time">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="CustomerIDLabel" layoutX="294.0" layoutY="349.0" text="Customer Name">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="AppointmentIDTextField" disable="true" layoutX="416.0" layoutY="71.0" prefHeight="39.0" prefWidth="170.0" style="-fx-font-style: italic;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ComboBox fx:id="EndTimeCombo" layoutX="416.0" layoutY="286.0" prefHeight="39.0" prefWidth="170.0" />
+      <ComboBox fx:id="StartTimeCombo" layoutX="416.0" layoutY="177.0" prefHeight="39.0" prefWidth="170.0" />
+      <ComboBox fx:id="ContactCombo" layoutX="109.0" layoutY="71.0" prefHeight="39.0" prefWidth="170.0" />
+      <ComboBox fx:id="CustomerNameCombo" layoutX="416.0" layoutY="339.0" prefHeight="39.0" prefWidth="170.0" />
+      <DatePicker fx:id="StartDateDatePicker" layoutX="416.0" layoutY="123.0" onAction="#PickStartDate" prefHeight="32.0" prefWidth="170.0" />
+      <DatePicker fx:id="EndDateDatePicker" layoutX="416.0" layoutY="227.0" onAction="#PickEndDate" prefHeight="32.0" prefWidth="170.0" />
+      <ComboBox fx:id="UserIDCombo" layoutX="109.0" layoutY="373.0" prefHeight="39.0" prefWidth="170.0" />
+      <Label fx:id="UserIDLabel" layoutX="12.0" layoutY="383.0" text="User ID">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="TypeCombo" layoutX="109.0" layoutY="320.0" prefHeight="39.0" prefWidth="170.0" />
+   </children>
+</AnchorPane>
